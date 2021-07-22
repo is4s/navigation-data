@@ -1,5 +1,8 @@
-Navigation Data
-============
+# pntOS Data
 
-The purpose of this repo is to store data for other pntOS projects. Packages of data should be
-separated by branch and commit history should be squashed in order to minimize download size.
+The purpose of this branch is to store data for pntOS. Any commits which modify or removal data
+files should be squashed in order to minimize download size.
+
+## Docs Data
+
+`docs/` contains various files used to generate the documentation, including images.
