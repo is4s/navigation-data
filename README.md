@@ -6,3 +6,4 @@ files should be squashed in order to minimize download size.
 ## Docs Data
 
 `docs/` contains various files used to generate the documentation, including images.
+`docs/branding` contains pntOS branding assets like the logo and custom font.
