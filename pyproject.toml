@@ -1,0 +1,17 @@
+[project]
+name = "pntos-python-exercises-docs-data"
+version = "0.1.0"
+description = "Assets to build pntOS-Python Exercises documentation."
+authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
+dependencies = []
+readme = "README.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["branding/**"]
+
+[tool.hatch.build.targets.wheel]
+include = ["branding/**"]
