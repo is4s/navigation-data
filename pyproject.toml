@@ -1,0 +1,21 @@
+[project]
+name = "pntos-python-datasets"
+version = "0.4.2"
+description = "Collection of distributed datasets designed for use as examples in pntos-python project."
+authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
+dependencies = []
+readme = "README.md"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["pntos_python_datasets/**"]
+
+[tool.hatch.build.targets.wheel]
+include = ["pntos_python_datasets/**"]
+
+[project.scripts]
+play-dataset = "pntos_python_datasets.play_dataset:play_dataset"
