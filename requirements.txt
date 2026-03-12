@@ -1,5 +1,6 @@
 lcm
 aspn23 @ git+ssh://git@github.com:Open-PNT/firehose-outputs.git@eb894c82b6bd622ed8f14b8674c495f307e1f723#subdirectory=aspn-py
 aspn23_lcm @ git+ssh://git@github.com:Open-PNT/firehose-outputs.git@eb894c82b6bd622ed8f14b8674c495f307e1f723#subdirectory=lcm/python
+matplotlib
 navtk==2.1.0.post3.dev0
 scipy>=1.15.2

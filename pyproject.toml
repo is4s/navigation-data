@@ -1,6 +1,6 @@
 [project]
 name = "pntos-python-datasets"
-version = "0.4.2"
+version = "0.5.0"
 description = "Collection of distributed datasets designed for use as examples in pntos-python project."
 authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
 dependencies = []
