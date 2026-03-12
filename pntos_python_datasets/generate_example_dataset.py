@@ -35,7 +35,7 @@ def simulate_sensor_noise(vel_body, R_body, sigma_noise):
     # Inject noise into measurement
     vel_body = vel_body + noise
 
-    # Inject noise covariance into measurment covariance
+    # Inject noise covariance into measurement covariance
     R_body = R_body + np.diag(noise_std**2)
 
     return vel_body, R_body
