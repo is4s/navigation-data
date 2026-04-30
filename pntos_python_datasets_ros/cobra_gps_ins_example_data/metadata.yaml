@@ -1,0 +1,44 @@
+rosbag2_bagfile_information:
+  version: 5
+  storage_identifier: sqlite3
+  duration:
+    nanoseconds: 2602048283000
+  starting_time:
+    nanoseconds_since_epoch: 1747680879335860000
+  message_count: 785819
+  topics_with_message_count:
+    - topic_metadata:
+        name: /sensor/ublox_ZED_F9T/velocity
+        type: aspn23_ros_interfaces/msg/MeasurementVelocity
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 2602
+    - topic_metadata:
+        name: /sensor/ins_d/pva
+        type: aspn23_ros_interfaces/msg/MeasurementPositionVelocityAttitude
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 520411
+    - topic_metadata:
+        name: /sensor/ublox_ZED_F9T/position
+        type: aspn23_ros_interfaces/msg/MeasurementPosition
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 2602
+    - topic_metadata:
+        name: /sensor/vn_100/imu
+        type: aspn23_ros_interfaces/msg/MeasurementImu
+        serialization_format: cdr
+        offered_qos_profiles: ""
+      message_count: 260204
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - cobra_gps_ins_example_data_0.db3
+  files:
+    - path: cobra_gps_ins_example_data_0.db3
+      starting_time:
+        nanoseconds_since_epoch: 1747680879335860000
+      duration:
+        nanoseconds: 2602048283000
+      message_count: 785819
