@@ -1,0 +1,33 @@
+name: Build Wheel
+
+on: [push, pull_request]
+
+jobs:
+    build-wheel:
+        runs-on: ubuntu-24.04
+        steps:
+        - uses: actions/checkout@v4
+          with:
+              lfs: true
+        - name: Set up Python 3.13
+          uses: actions/setup-python@v3
+          with:
+              python-version: 3.13
+        - name: Build Wheel
+          run: pip wheel -v .
+        - name: Check Wheel Size
+          run: |
+            WHEEL_SIZE=$(stat -c%s *.whl)
+            MIN_SIZE=1000000 # ~1MB
+            echo "Wheel size: $WHEEL_SIZE bytes ($(($WHEEL_SIZE / 1024)) KB)"
+            if [ $WHEEL_SIZE -lt $MIN_SIZE ]; then
+              echo "Error: Wheel is too small; something went wrong"
+              exit 1
+            fi
+        - name: Test Wheel Install
+          run: pip install *.whl
+        - name: Save Wheel
+          uses: actions/upload-artifact@v4
+          with:
+            name: wheel
+            path: ./*.whl
