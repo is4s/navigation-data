@@ -1,7 +1,7 @@
 [project]
-name = "pntos-python-docs-data"
+name = "pntos-cobra-docs-data"
 version = "1.0.0"
-description = "Assets to build pntOS-Python documentation."
+description = "Assets to build Cobra documentation."
 authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
 dependencies = []
 readme = "README.md"
