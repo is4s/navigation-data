@@ -1,6 +1,6 @@
 [project]
 name = "pntos-cobra-docs-data"
-version = "1.0.0"
+version = "1.1.0"
 description = "Assets to build Cobra documentation."
 authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
 dependencies = []
