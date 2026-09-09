@@ -1,2 +1,6 @@
 # macOS artifacts
 .DS_Store
+
+build
+*.egg-info
+.venv
