@@ -1,4 +1,4 @@
-# pntOS-Python Exercises Documentation Data
+# Cobra Exercises Documentation Data
 
 `branding` contains pntOS branding assets like the logo and custom font.
 
