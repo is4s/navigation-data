@@ -1,0 +1,21 @@
+[project]
+name = "pntos-python-datasets-ros"
+version = "0.1.0"
+description = "A ROS bag designed for use in pntos-python."
+authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
+dependencies = []
+readme = "README.md"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["pntos_python_datasets_ros/**"]
+
+[tool.hatch.build.targets.wheel]
+include = ["pntos_python_datasets_ros/**"]
+
+[project.scripts]
+play-ros-dataset = "pntos_python_datasets_ros.play_ros_dataset:play_ros_dataset"
