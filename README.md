@@ -1,6 +1,6 @@
-# pntos-python-datasets-lcm
+# pntos-cobra-datasets-lcm
 
-This repository contains an LCM log for pntos-python:
+This repository contains an LCM log for Cobra:
 
 `cobra_gps_ins_example_data.log` is based off of `2025_05_19_route07.log`. Specifically, it
 contains a subset of the following channels:
@@ -19,7 +19,7 @@ this script the necessary python environment must be set up.
 Create clean venv:
 
 ```Shell
-python3 -m venv .venv --prompt pntos-python-datasets
+python3 -m venv .venv --prompt pntos-cobra-datasets
 ```
 
 Source the virtual environment (bash/zsh):
@@ -40,7 +40,7 @@ pip install -v -r requirements.txt --extra-index-url=$UV_INDEX
 ### Generating New Log
 Generating a log can be done by:
 ```Shell
-pntos_python_datasets/generate_example_dataset.py <path_to_logfile>
+pntos_cobra_datasets/generate_example_dataset.py <path_to_logfile>
 ```
 
 > [!Note]
