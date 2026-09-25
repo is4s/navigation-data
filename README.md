@@ -1,3 +1,3 @@
-# pntos-python-datasets-ros
+# pntos-cobra-datasets-ros
 
-This repository contains a ROS bag dataset for pntos-python.
+This repository contains a ROS bag dataset for Cobra.

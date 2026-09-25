@@ -4,7 +4,7 @@ from site import getsitepackages
 
 def find_file(file: str) -> str:
     for site in getsitepackages():
-        candidate = f'{site}/pntos_python_datasets_ros/{file}'
+        candidate = f'{site}/pntos_cobra_datasets_ros/{file}'
         if path.exists(candidate):
             return candidate
     raise FileNotFoundError(f'Could not find {file} in site-packages.')
