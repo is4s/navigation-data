@@ -1,6 +1,6 @@
 [project]
 name = "pntos-cobra-datasets-lcm"
-version = "0.1.0"
+version = "0.2.0"
 description = "An LCM log designed for use in Cobra."
 authors = [{ name = "IS4S", email = "pntos@is4s.com" }]
 dependencies = []
