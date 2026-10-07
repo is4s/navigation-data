@@ -10,3 +10,4 @@ def find_file(file: str) -> str:
     raise FileNotFoundError(f'Could not find {file} in site-packages.')
 
 EXAMPLE_LCM_LOG = find_file('cobra_gps_ins_example_data.log')
+EXAMPLE_LCM_TIMING_LOG = find_file('cobra_timing_example_data.log')

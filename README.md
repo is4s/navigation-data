@@ -1,9 +1,12 @@
 # pntos-cobra-datasets-lcm
 
-This repository contains an LCM log for Cobra:
+This repository contains two example LCM logs for Cobra.
+
+### Example GPS/INS Log
 
 `cobra_gps_ins_example_data.log` is based off of `2025_05_19_route07.log`. Specifically, it
-contains a subset of the following channels:
+contains the following channels:
+
 * `/sensor/bmp388/baro_pressure`
 * `/sensor/ins-d/pva`
 * `/sensor/ublox-ZED-F9T/position`
@@ -15,7 +18,18 @@ contains a subset of the following channels:
 The example log can be recreated from the original log using `generate_example_dataset.py`. To run
 this script the necessary python environment must be set up.
 
+### Example Timing Log
+
+This is a log containing time measurements for use in a timing sensor fusion filter. It contains measurements from 5 clocks:
+
+* Ublox coordinated (GPS-disciplined) time
+* FS740 coordinated (GPS-disciplined) time
+* OCXO uncoordinated (free-running) time
+* CSAC uncoordinated (free-running) time
+* SiTime7111 uncoordinated (free-running) time
+
 ### Python Environment Setup
+
 Create clean venv:
 
 ```Shell
